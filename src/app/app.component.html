@@ -1,0 +1,12 @@
+<app-cabecera
+[_totalDisponible]='onObtenerTotal()'
+[_totalIngresos]='onObtenerIngresoTotal()'
+[_totalEgresos]='onObtenerEgresosTotal()'
+[_porcentajeEgresos]='onObtenerPorcentajeEgreso()'></app-cabecera>
+
+<app-formulario-presupuesto></app-formulario-presupuesto>
+
+  <div class="contenedor limpiarEstilos">
+      <app-ingreso-presupuesto></app-ingreso-presupuesto>
+      <app-egreso-presupuesto></app-egreso-presupuesto>
+  </div>

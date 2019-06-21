@@ -1,0 +1,26 @@
+
+  <div class="agregar">
+      <div class="agregar_contenedor">
+
+          <select class="agregar_tipo" [(ngModel)]="_presupuestoSelec">
+              <option value="0" selected>+</option>
+              <option value="1">-</option>
+          </select>
+
+          <input
+          type="text"
+          class="agregar_descripcion"
+          placeholder="Agregar Descripción"
+          #descripcion>
+
+          <input
+          type="number"
+          class="agregar_valor"
+          placeholder="Valor"
+          #valor>
+
+          <button class="agregar_btn"
+          (click)='onAgregarPresupuesto(descripcion, valor)'
+          ><i class="ion-ios-checkmark-outline"></i></button>
+      </div>
+  </div>

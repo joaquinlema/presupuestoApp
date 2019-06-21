@@ -1,0 +1,7 @@
+<div class="egreso">
+  <h2 class="egreso_titulo">Egresos</h2>
+      <app-egreso-presupuesto-item *ngFor="let elementoEgreso of onObtenerEgresos();let i = index"
+      [egresoItem]='elementoEgreso'
+      [indice]='i'
+      [porcentaje]='onObtenerPorcentajeItem(elementoEgreso.valor)'></app-egreso-presupuesto-item>
+</div>

@@ -1,0 +1,7 @@
+<div class="ingreso">
+  <h2 class="ingreso_titulo">Ingresos</h2>
+  <app-ingreso-presupuesto-item
+  *ngFor="let presupuestoElemento of onObtenerIngresos(); let i = index"
+  [itemPresupuesto]='presupuestoElemento'
+  [indice]='i'></app-ingreso-presupuesto-item>
+</div>
